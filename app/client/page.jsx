@@ -15,13 +15,13 @@ export default function ClientPage() {
 
     return (
         <div>
-            <Container style={{ width: "60%" }}>
+            <Container style={{ width: "40%" }}>
                 <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Get data with Client Components</h2>
 
                 <Form onSubmit={onSearch}>
                     <Form.Group className="d-flex align-items-center">
-                        <Form.Control className="rounded-start" placeholder="Masukkan limit data" style={{ width: "30%", outline: "none", border: "2px solid #2E8B57" }} />
-                        <Button variant="success" className="rounded-end" style={{ marginLeft: "0.1rem", width: "8%" }} type="submit">
+                        <Form.Control className="rounded-start" placeholder="Masukkan limit data" style={{ width: "29%", outline: "none", border: "2px solid #2E8B57" }} />
+                        <Button variant="success" className="rounded-end" style={{ marginLeft: "0.1rem", width: "10%" }} type="submit">
                             Cari
                         </Button>
                     </Form.Group>
@@ -38,11 +38,7 @@ export default function ClientPage() {
 
                 {/* jika angka yg diinputkan itu 0 atau kurang dari 0 (-1,-2,-3 dst)  */}
                 {/* maka hasilnya tidak ada data */}
-                {query && query <= "0" ? (
-                    <p>Tidak ada data</p>
-                    ) : (
-                    <ResultClientComponent query={query} />
-                )}
+                {query && query <= "0" ? <p>Tidak ada data</p> : <ResultClientComponent query={query} />}
             </Container>
         </div>
     );
