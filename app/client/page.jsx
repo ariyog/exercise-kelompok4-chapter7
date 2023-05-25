@@ -29,7 +29,20 @@ export default function ClientPage() {
 
                 <br />
 
-                {query && <ResultClientComponent query={query} />}
+                {/* logic by bang fahrur rozi */}
+                {/* {query && query !== "0" ? (
+                    <ResultClientComponent query={query} />
+                ) : (
+                    <p>Tidak ada data</p>
+                )} */}
+
+                {/* jika angka yg diinputkan itu 0 atau kurang dari 0 (-1,-2,-3 dst)  */}
+                {/* maka hasilnya tidak ada data */}
+                {query && query <= "0" ? (
+                    <p>Tidak ada data</p>
+                    ) : (
+                    <ResultClientComponent query={query} />
+                )}
             </Container>
         </div>
     );
