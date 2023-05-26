@@ -1,6 +1,32 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/ariyog/exercise-kelompok4-chapter7.git
+```
+
+Install Node Module
+
+```bash
+  npm install
+```
+
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run dev
+```
+<!-- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. -->
+
+
+<!-- ## Getting Started
 
 First, run the development server:
 
@@ -10,7 +36,7 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-```
+``` -->
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
