@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Relase
+
+Here are some relase projects
+
+[Bisa Klik Disini yaa](https://pokemon-data-4.netlify.app)
+
 
 ## Run Locally
 
